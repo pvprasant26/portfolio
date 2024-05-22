@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ford's Performance Analytics App Redesign</title>
+<link rel="stylesheet" type="text/css" href="index.css" />
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<div id="mobile_nav">
+        <div class="mobile_container ">
+            <div id="mobile_logo"><a href="index.html"><img src="images/mobile/logo.png" width="40px" height="40px" />&nbsp; &nbsp; &nbsp; <span style="color:white; font-size:20px; font-weight: bold;">Prasant Poodipeddi</span></a></div>
+        </div>    
+    </div>
+	
+	<div id="chatbot_mb_content">
+		<img src="images/ford/ford-poster@2x.jpg" width="100%" height="auto">
+		<div class="mobile_container">
+            <br/>
+            Upon joining Ford in 2021, my first task was to redesign the existing PACE application for automobile engineers at Ford which was initially built by programmers without any design thinking involved. My responsibility was to improve the application's readability, navigability, and accessibility by considering the constraints of Qlikview. <br/><br/>
+			'Performance Analytics for Connected Engineering' is an analytics app that monitors the performance across the Ford connected vehicle ecosystem. It reports connectivity issues when a command is requested by the customer from the mobile app to the vehicle. To proceed further, I had to understand the goals and challenges of the project and put pen to paper.
+			<br/><br/><br/>
+		    <b>Challenges and Goals</b><br/><br/>
+            <ul style="list-style-type:disc">
+                <li>Finding the most vital usability problems and fixing them</li>
+                <li>Qlikview App dev constraints </li>
+                <li>Implementing the Ford Design System to the existing dashboard</li>
+                <li>Measure outcome</li>
+             </ul>
+		    <br/>
+
+            <b>Research</b><br/><br/>
+            To understand the behavioral patterns and identify the pain points of the users, we conducted a 10 question survey with 51 participants that included engineers and managers. <br/><br/>
+
+            One surprising takeway was their response to <b>'How far back do you review data?' </b> Almost 97% of the users were only interested in viewing the data within recent 6 months. The application was earlier storing past 4 years of the data which was in turn effecting the speed and performance of the dashboard. <br/> <br/>
+
+            In addition to this, the participants were asked to list out the areas of improvement. Below are the 4 most common points mentioned by the participants.<br/><br/>
+            <ul style="list-style-type:disc">
+                <li>Visual noise, crowded data, no consistency, difficult to find information</li>
+                <li>Technical terms were difficult to understand for business stakeholders. Engineers were familiar with these terms.</li>
+                <li>It's challenging to find hidden filters</li>
+                <li>The charts take forever to load, too slow when the filters are selected</li>
+            </ul>
+            <br/>
+            <img src="images/ford/survey.jpg" width="100%" height="auto" text-align="center"><br/><br/><br/>
+            <b>User Personas</b><br/><br/>
+            After research and testing, I compiled all data into a user persona to give any potential stakeholders or coworkers a simple picture of what typical users look like. <br/><br/>
+            The vital takeaways are that there are two types of users - field workers (engineers, quality control), and decision-makers (business managers and product managers). Each has its respective responsibilities and pain points. <br/><br/>
+
+            <img src="images/ford/persona-1@2x.jpg" width="100%" height="auto" text-align="center"><br/><br/><br/>
+            <img src="images/ford/user-persona-2.jpg" width="100%" height="auto" text-align="center"><br/><br/><br/>
+
+            <b>Identifying Pain Points</b><br/><br/>
+
+            <b>Problem 1 : Inconsistent UI </b><br/><br/>
+
+            The elements on the dashboard pages are not uniform. Components such as links, buttons, icons, header, and theme colors are inconsistently used across the application. Titles and body copy have inconsistent font styles and font sizes which stops the users from establishing a pattern in their minds and completing the task efficiently.
+            <br/><br/><br/>
+            <img src="images/ford/old-design@2x.jpg" width="100%" height="auto" text-align="center"><br/><br/><br/>
+            <img src="images/ford/ui-components@2x.jpg" width="100%" height="auto" text-align="center"><br/><br/><br/>
+
+            <b>Problem 2 : Charts and technical terms have no help text to provide context</b> <br/><br/>
+
+            Some users found it difficult to understand the technical terms used in the dashboards. Knowledge base search-ability is a massive hurdle, and users would rather fire off a support ticket than search for the information they need. 
+            <br/><br/><br/>
+            <b>Problem 3 : Hidden filters </b><br/><br/>
+            A lot of engineers and product owners complained about filters not being very obvious to find due to the expand-collapse component. Even if the users found the filters, it was always an additional step to expand the filters and then select the required filter option.
+            <br/><br/><br/>
+            <img src="images/ford/hidden-filters.jpg" width="100%" height="auto" text-align="center"><br/><br/><br/>
+
+            <b>Problem 4 : App speed and performance </b><br/><br/>
+
+            User research helped us find out that loading charts and filters were taking more time than expected due to the data overload in the QlikView hence affecting the speed and performance of the app. 
+            <br/><br/><br/>
+
+            <b>Designing Solutions</b><br/><br/>
+            I started my design process with low-fidelity wireframes. I began my process in isolation to gather all my thoughts followed by having several working sessions with the team members (product owner, data scientists, UX writer, and developers). Once we were all aligned with the proposed solutions, we tested them with our customers and received a positive response to moving forward with the next steps of prototyping. <br/><br/>
+            <img src="images/ford/moodboard.jpg" width="100%" height="auto" text-align="center"><br/><br/><br/>
+            <img src="images/ford/ford-wireframesn_1.jpg" width="100%" height="auto" text-align="center"><br/><br/><br/>
+            <img src="images/ford/ford_wireframesn_2.jpg" width="100%" height="auto" text-align="center"><br/><br/><br/>
+
+            <b>Solution 1 : Intuitive and consistent UI design language</b> <br/><br/>
+            
+            As you can see, the inconsistent UI was one of the biggest problems for the users. The data wasn't displayed in a hierarchical manner which resulted in visual noise and crowded data making it difficult for the user to comprehend and analyze the results.
+            <br/>
+            As a solution, I decided to implement the components from the Global Ford Design System which helped in achieving a pattern and consistency in the user interface. It would help users to reduce the learning time for a product since user gets familiar with the given experience. This way they can focus on executing the task and not learning how the product UI works every time they switch the context.
+            <br/><br/><br/>
+            <img src="images/ford/homepage-new.jpg" width="100%" height="auto" text-align="center"><br/><br/>
+            <img src="images/ford/provisioning.jpg" width="100%" height="auto" text-align="center"><br/><br/><br/>
+
+            <b>Solution 2 : Adding help text and glossary page for technical terms </b><br/><br/>
+            
+            Understanding technical terms in the connected vehicle ecosystem was a challenge, especially for the business owners and the management. <br/>
+            As a solution, I decided to include help text on hover for all performance statuses which provides context that some of the terms themselves may not provide.  
+            <br/><br/><br/><br/>
+            <center><img src="images/ford/help-text@2x.jpg"  width="100%" height="auto" text-align="center"><br/><br/><br/></center>
+            In addition to this, I also added a <b>Glossary page </b> that filters the terms according to the feature page that's active. Styling the Glossary table on QlikView was challenging but we still wanted to keep it as it solves the user problem. 
+            <br/><br/><br/>
+            <center><img src="images/ford/glossary.jpg" width="70%" height="auto" text-align="center"><br/><br/><br/></center>
+
+            <b>Solution 3 : Show all filters by default </b><br/><br/>
+
+            One way to reduce the time and effort for the users was to show all the filters by default instead of collapsing them within an accordion component. I didn't want to change the position of the filters because the patterns we see on our favorite sites shape what we expect to encounter on other websites or applications. Filtering for products on Amazon, and filtering for flights on Kayak, Facebook, Google, Twitter, and eBay all use left-side navigation and/ or filters. There are different reasons for this but the simple explanation is that most of us read left to right and so the left side of the screen is where we look most frequently.
+            <br/><br/><br/>
+            <img src="images/ford/filters.jpg" width="100%" height="auto" text-align="center"><br/><br/>
+
+            <b>Solution 4 : App speed and performance </b><br/><br/>
+
+            As found in user research, loading charts and filters took a lot of time and hence reduced the efficiency of the app. And since I knew that user's didn't care about the data older than 1 year, I decided to remove all that data from the backend which resulted in faster load speed and performance of the application.
+            
+            <br/><br/><b>Summary</b><br/><br/>
+
+            Through research and testing, I found that the PACE's (Performance Analytcis for Connected Engineering) four biggest problems were the poor UI, data load speed, technical jargons and hidden filters. I minimized the causes of problems by continuous testing and iterations on the design solutions leading to the following outcomes:
+            <br/><br/>
+            1. Reduced the load time of all data visualizations by 3 seconds<br/>
+            2. Increased the number of internal engineering and management users from 257 to ~1500 in 4 months of product release<br/>
+            3. Reduced the user-time for completion of major tasks in the app by an average of 12 seconds (32%)
+
+		</div>
+			<center>
+		<br/><br/>
+        Copyright 2024. Prasant Poodipeddi
+		<br/><br/>
+		</center> 
+	</div>
+
+	
+</body>
+</html>
