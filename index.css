@@ -153,6 +153,10 @@ abbr,acronym{
 
 	padding-top:13px;
 
+
+}
+.contact-actions{
+	text-align: center;
 }
 
 #menu{
@@ -264,11 +268,6 @@ abbr,acronym{
 
 }
 
-#designs2{
-
-	
-
-}
 
 .blur{
 
@@ -295,7 +294,7 @@ abbr,acronym{
 #me{
 
 	
-
+	margin-top: 80px;
 	background-position:center;
 
 	
@@ -306,6 +305,27 @@ abbr,acronym{
 
 	
 
+}
+.button {
+	border: none;
+	border-radius: 8px;
+	color: white;
+	padding: 10px 24px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 18px;
+	margin: 4px 2px;
+	cursor: pointer;
+  }
+  .button:hover{
+	color:white;
+  }
+.button-1{
+	background-color:#111F2C;;
+}
+.button-1:hover{
+	background-color:#063a76;
 }
 
 #me_content{
@@ -783,6 +803,13 @@ display:none;
 	line-height:40px;
 
 }
+.sub-text{
+	color:white;
+	font-size: 14px;
+	text-align: center;
+
+}
+
 
 #subcaption{
 
