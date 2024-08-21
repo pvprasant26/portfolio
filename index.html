@@ -31,17 +31,24 @@
 </script>
 <!--  -->
 <script>
-        document.addEventListener('DOMContentLoaded', function() {
-        const menuIcon = document.getElementById('menu-icon');
-        const menu = document.getElementById('menu');
+      
+    document.getElementById('menu-icon').addEventListener('click', function() {
+    var navMenu = document.getElementById('nav-menu');
+    var hamburger = document.getElementById('hamburger');
+    var closeIcon = document.getElementById('close-icon');
 
-        menuIcon.addEventListener('click', function() {
-            menu.classList.toggle('open');
-            menuIcon.classList.toggle('open');
-        });
-    });
-
+    if (navMenu.style.display === 'block') {
+        navMenu.style.display = 'none';
+        closeIcon.style.display = 'none';
+        hamburger.style.display = 'flex';
+    } else {
+        navMenu.style.display = 'block';
+        closeIcon.style.display = 'block';
+        hamburger.style.display = 'none';
+    }
+});
 </script>
+
 </head>
 
 <body>
@@ -52,6 +59,24 @@
 <div id="mobile_nav">
 	<div class="mobile_container ">
         <div id="mobile_logo"><a href="index.html"><img src="images/mobile/logo.png" width="40px" height="40px" />&nbsp; &nbsp; &nbsp; <span style="color:white; font-size:20px; font-weight: bold;">Prasant Poodipeddi</span></a></div>
+        <div class="menu-icon" id="menu-icon">
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="close-icon" id="close-icon">
+                &#10005; 
+            </div>
+        </div>
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </div>    
 </div>
 
@@ -72,8 +97,8 @@
         	 
          <center>
          <br/>
-         <a href="password-check-mobile.html"><img src="images/hp/hp-poster-mobile.jpg" width="80%" height="auto" /></a><br/>
-         <strong><a href="password-check-mobile.html">Tap to view</a></strong><br/><br/>
+         <a href="hp-feature-1-mobile.html"><img src="images/hp/hp-poster-mobile.jpg" width="80%" height="auto" /></a><br/>
+         <strong><a href="hp-feature-1-mobile.html">Tap to view</a></strong><br/><br/>
          <a href="ford_mobile.html"><img src="images/ford-thumbnail.jpg" width="80%" height="auto" /></a><br/>
          <strong><a href="ford_mobile.html">Tap to view</a></strong><br/><br/>
          <a href="humana_mobile.html"><img src="images/humana/humana-thumbnail.jpg" width="80%" height="auto" /></a><br/>
@@ -166,7 +191,7 @@
         <div class="heading">RECENT WORK</div>
             <br/><br/><br/>
 
-        <div class="portfolio-box"> <a href="password-check.html">
+        <div class="portfolio-box"> <a href="hp-feature-1.html">
                 <div class="row">
                     <div class="col-1">
                         <img src="images/hp-sm-icon.png">
@@ -189,9 +214,9 @@
                 <div class="col-1">
 
                 </div>
-                <div class="col-4" style = "color:darkgrey">
+                <!-- <div class="col-4" style = "color:darkgrey">
                     &#128274;&nbsp;<i>Password Protected</i>
-                </div>
+                </div> -->
             </div></a>
         </div> 
 
