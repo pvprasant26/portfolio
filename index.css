@@ -118,6 +118,8 @@ abbr,acronym{
 
 }
 
+
+
 .portfolio-box{
 	background-color:#F9F9F9; 
 	text-align: left;
@@ -543,16 +545,22 @@ textarea{
 
 }
 
-
-
-
-
 #visual{
-
 	margin-top: 35px;
-
 	text-align: center;
+}
 
+.testimonial-1{
+	background-color: #F5F5F5;
+	font-size: 12px;
+	line-height: 16px;
+}
+.testimonial-mb{
+	background-color: #F5F5F5;
+	font-size: 10px;
+	line-height: 14px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 
@@ -892,6 +900,9 @@ display:none;
 
 
 }
+
+
+
 
 
 
